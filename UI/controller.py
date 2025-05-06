@@ -8,7 +8,7 @@ class Controller:
         # the model, which implements the logic of the program and holds the data
         self._model = model
 
-    def handle_hello(self, e):
+    def handle_analizza(self, e):
         name = self._view.txt_name.value
         if name is None or name == "":
             self._view.create_alert("Inserire il nome")
