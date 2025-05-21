@@ -9,9 +9,9 @@ class Controller:
         self._model = model
 
     def handle_analizza(self, e):
-        name = self._view.txt_name.value
+        name = self._view.txt_distanza
         if name is None or name == "":
             self._view.create_alert("Inserire il nome")
             return
-        self._view.txt_result.controls.append(ft.Text(f"Hello, {name}!"))
+
         self._view.update_page()
